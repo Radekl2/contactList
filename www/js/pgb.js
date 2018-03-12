@@ -14,7 +14,7 @@ function showContactList() {
 		  var contact = 'Name' + contacts[i].displayName);
          for(var j = 0; j < contacts[i].phoneNumbers.length; j++) {
             var phone = contacts[i].phoneNumbers[j];
-			contact = contact + ' number: ' +phone.number:
+			//contact = ' number: ' +phone.number:
 			document.getElementById('cont').innerHTML = contact;
          }
       }
