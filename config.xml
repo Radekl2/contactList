@@ -12,7 +12,7 @@
 	<platform name="android" />
 	
 	<plugin name="cordova-plugin-contacts-phonenumbers" spec="0.0.10" />
-	
+	<gap:plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />
 	
 
 </widget>
