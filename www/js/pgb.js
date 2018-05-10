@@ -30,7 +30,7 @@ function showContactList() {
 
 function send() {
 document.addEventListener('deviceready', function () {
-	cordova.plugins.email.requestPermission(function (granted) {...});
+	
     cordova.plugins.email.isAvailable(
         function (isAvailable) {
             alert("is email mobile available? " + (isAvailable ? "Yes" : "No"));
