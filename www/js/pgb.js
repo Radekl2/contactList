@@ -30,19 +30,13 @@ function showContactList() {
 
 function send() {
 document.addEventListener('deviceready', function () {
-	
-    cordova.plugins.email.isAvailable(
-        function (isAvailable) {
-            alert("is email mobile available? " + (isAvailable ? "Yes" : "No"));
-            if(isAvailable){
-             window.plugin.email.open({
+    
+             cordova.plugins.email.open({
                  to:      'test@test.com',
                  subject: 'Greetings',
                  body:    'How are you? Nice greetings from Leipzig'
              }, callback, scope);
-           }
-        }
-    );
+        
 }, false);
 }
 function callback(){
